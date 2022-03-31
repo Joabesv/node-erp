@@ -1,0 +1,5 @@
+O arquivo de build do server sera este por ter montado a estrutura baseado no 
+express-generator
+
+links sobre: https://expressjs.com/pt-br/starter/generator.html
+             https://stackoverflow.com/questions/55451167/why-use-bin-www-and-not-index-js
