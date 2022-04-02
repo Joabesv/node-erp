@@ -1,0 +1,340 @@
+{
+  "info": {
+    "_postman_id": "eb6a656d-9975-497a-95dd-9b7b0b453e9b",
+    "name": "requests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Node Erp",
+      "item": [
+        {
+          "name": "auth",
+          "item": [
+            {
+              "name": "Login",
+              "request": {
+                "description": "",
+                "method": "POST",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"userName\":\"admin@test.com\",\n    \"password\":\"teste123\",\n    \"userType\": 1\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:5000/login",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["login"]
+                },
+                "auth": {}
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "staff",
+          "item": [
+            {
+              "name": "delete",
+              "request": {
+                "description": "",
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/staffs/delete/62486778531432683ecffbe8",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["staffs", "delete", "62486778531432683ecffbe8"]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "get by id",
+              "request": {
+                "description": "",
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/staffs/62486778531432683ecffbe8",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["staffs", "62486778531432683ecffbe8"]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "get all",
+              "request": {
+                "description": "",
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/staffs/",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["staffs", ""]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "update",
+              "request": {
+                "description": "",
+                "method": "PUT",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n   \"emailId\":\"admin2@test.com\",\n    \"password\": \"teste321\",\t\n    \"firstName\": \"admin do update\",\n    \"lastName\": \"doe\",\n    \"birthDate\": \"01 February 2004\",\n    \"phoneNumber\": \"11111111111\",\n    \"city\": \"Diadema\",\n    \"state\": \"SP\",\n    \"designation\": \"Admin\"\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:5000/staffs/update/6245ab49c660f5402aee6ba8",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["staffs", "update", "6245ab49c660f5402aee6ba8"]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "create",
+              "request": {
+                "description": "",
+                "method": "POST",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"emailId\":\"admin2@test.com\",\n    \"password\": \"teste123\",\t\n    \"firstName\": \"admin\",\n    \"lastName\": \"doe\",\n    \"birthDate\": \"01 February 2004\",\n    \"phoneNumber\": \"11111111111\",\n    \"city\": \"Diadema\",\n    \"state\": \"SP\",\n    \"designation\": \"Manager\"\n}\n\n"
+                },
+                "url": {
+                  "raw": "http://localhost:5000/staffs/create",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["staffs", "create"]
+                },
+                "auth": {}
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Recursos Humanos",
+          "item": [
+            {
+              "name": "Get All",
+              "request": {
+                "description": "",
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/humanResources",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["humanResources"]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "Get By ID",
+              "request": {
+                "description": "",
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/humanResources/62463f36096b64b30ac26321",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["humanResources", "62463f36096b64b30ac26321"]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "Update",
+              "request": {
+                "description": "",
+                "method": "PUT",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"emailId\": \"teste2@teste.com\",\n    \"password\": \"testando dnv\",\n    \"firstName\": \"Anny seu nome é um teste\", \n    \"lastName\": \"Doe 2\",\n    \"birthDate\": \"12 October 2001\",\n    \"phoneNumber\": \"+91 1234567899\",\n    \"city\": \"São Paulo 2\",\n    \"state\": \"SP2\"\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:5000/humanResources/update/62463f36096b64b30ac26321",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": [
+                    "humanResources",
+                    "update",
+                    "62463f36096b64b30ac26321"
+                  ]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "Delete",
+              "request": {
+                "description": "",
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/humanResources/delete/62463d09bf3044b097eb3c37",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": [
+                    "humanResources",
+                    "delete",
+                    "62463d09bf3044b097eb3c37"
+                  ]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "Create",
+              "request": {
+                "description": "",
+                "method": "POST",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"emailId\": \"testeOriginal@teste.com\",\n    \"password\": \"testandoHROriginal\",\n    \"firstName\": \"Ann Original\", \n    \"lastName\": \"Doe Original\",\n    \"birthDate\": \"12 October 2001\",\n    \"phoneNumber\": \"123456789\",\n    \"city\": \"São Paulo original\",\n    \"state\": \"SP originial\"\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:5000/humanResources/create",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["humanResources", "create"]
+                },
+                "auth": {}
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Desenvolvedores",
+          "item": [
+            {
+              "name": "Get all Devs",
+              "request": {
+                "description": "",
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/devs",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["devs"]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "Get Dev by id",
+              "request": {
+                "description": "",
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/devs/62488c37b69da78b5bc2b6bf",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["devs", "62488c37b69da78b5bc2b6bf"]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "Create Dev",
+              "request": {
+                "description": "",
+                "method": "POST",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"emailId\": \"testeDevOriginal@teste.com\",\n    \"password\": \"testandoDevOriginal\",\n    \"firstName\": \"Ann Dev Original\", \n    \"lastName\": \"Doe\",\n    \"birthDate\": \"12 October 2004\",\n    \"phoneNumber\": \"+91 123456789\",\n    \"city\": \"São Paulo Dev\",\n    \"state\": \"SP Dev\"\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:5000/devs/create",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["devs", "create"]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "Update Dev",
+              "request": {
+                "description": "",
+                "method": "PUT",
+                "header": [
+                  { "key": "Content-Type", "value": "application/json" }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \t\"emailId\": \"testeDevAtualizado@teste.com\",\n\t\t\"password\": \"testandoDevAtualizado\",\n\t\t\"firstName\": \"Ann Dev Atualizado\",\n\t\t\"lastName\": \"Doe\",\n\t\t\"birthDate\": \"2004-10-12T03:00:00.000Z\",\n\t\t\"phoneNumber\": \"+91 123456789\",\n\t\t\"city\": \"São Paulo Dev Atualizado\",\n\t\t\"state\": \"SP Dev Atualizado\"\n}"
+                },
+                "url": {
+                  "raw": "http://localhost:5000/devs/update/624680cd17442d55ed4f72e1",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["devs", "update", "624680cd17442d55ed4f72e1"]
+                },
+                "auth": {}
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Dev",
+              "request": {
+                "description": "",
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost:5000/devs/delete/62488c37b69da78b5bc2b6bf",
+                  "protocol": "http",
+                  "host": ["localhost:5000"],
+                  "path": ["devs", "delete", "62488c37b69da78b5bc2b6bf"]
+                },
+                "auth": {}
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
