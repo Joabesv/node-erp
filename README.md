@@ -18,3 +18,10 @@
 
 - [nodemon](https://nodemon.io/)
   autoreload quando editar o arquivo
+
+## Insomnia e Postman Requests
+
+- [Postman](https://www.postman.com/)
+- [Insomnia](https://insomnia.rest/)
+- Use a rota de login para pegar os dados do JWT Token
+- Coloque nas requests em que você fez login com o userType
